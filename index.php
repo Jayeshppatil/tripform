@@ -16,7 +16,7 @@ if(isset($_POST['name'])){
     $charset = "utf8mb4";
 
     //Create a  database connection
-    $con = mysqli_connect($server,$username,$password);
+    $con = mysqli_connect($host,$server,$db,$username,$password,$charset);
 
     // Check for Connection success
     if(!$con){
