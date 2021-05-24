@@ -2,9 +2,18 @@
 $insert = false;
 if(isset($_POST['name'])){
     //Set Connection Variables
+
+    // $server = "localhost";
+    // $username = "root";
+    // $password = "";
+
+    // remote database connection
+    $host = "remotemysql.com";
     $server = "localhost";
-    $username = "root";
-    $password = "";
+    $db = "v6Y2zMt1dX";
+    $username = "v6Y2zMt1dX";
+    $password = "5tSRTdbZrb";
+    $charset = "utf8mb4";
 
     //Create a  database connection
     $con = mysqli_connect($server,$username,$password);
