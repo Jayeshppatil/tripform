@@ -13,10 +13,10 @@ if(isset($_POST['name'])){
     $db = "v6Y2zMt1dX";
     $username = "v6Y2zMt1dX";
     $password = "5tSRTdbZrb";
-    // $charset = "utf8mb4";
+    $charset = "utf8mb4";
 
     //Create a  database connection
-    $con = mysqli_connect($host,$db,$username,$password);
+    $con = mysqli_connect($host,$db,$username,$password,$charset);
 
     // Check for Connection success
     if(!$con){
