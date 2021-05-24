@@ -10,9 +10,9 @@ if(isset($_POST['name'])){
     // remote database connection
     $host = "remotemysql.com";
     // $server = "localhost";
-    $db = "v6Y2zMt1dX";
-    $username = "v6Y2zMt1dX";
-    $password = "5tSRTdbZrb";
+    $db = "DrNV8ouNao";
+    $username = "DrNV8ouNao";
+    $password = "MbQHH4W42D";
 
     //Create a  database connection
     $con = mysqli_connect($host,$db,$username,$password);
