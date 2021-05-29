@@ -3,19 +3,25 @@ $insert = false;
 if(isset($_POST['name'])){
     //Set Connection Variables
 
+    $server = "remotemysql.com";
+    $username = "DrNV8ouNao";
+    $password = "MbQHH4W42D";
+    $db = "DrNV8ouNao";
+    
     // $server = "localhost";
     // $username = "root";
     // $password = "";
 
-    // remote database connection
-    $host = "remotemysql.com";
-    // $server = "localhost";
-    $db = "DrNV8ouNao";
-    $username = "DrNV8ouNao";
-    $password = "MbQHH4W42D";
+    // // remote database connection
+    // $host = "remotemysql.com";
+    // // $server = "localhost";
+    // $db = "DrNV8ouNao";
+    // $username = "DrNV8ouNao";
+    // $password = "MbQHH4W42D";
 
     //Create a  database connection
-    $con = mysqli_connect($host,$db,$username,$password);
+    // $con = mysqli_connect($host,$db,$username,$password);
+    $con = mysqli_connect($server, $db, $username,$password);
 
     // Check for Connection success
     if(!$con){
